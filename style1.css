@@ -1,0 +1,55 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+@font-face {
+    font-family:Roboto ;
+    src: url('assets/fonts/Roboto-Regular.ttf');
+
+   
+}
+@font-face {
+    font-family: Roboto-bold;
+    src: url('assets/fonts/Roboto-Bold.ttf');
+}
+:root{
+    --bgcolor:#36384d;
+    --fontcolor:#36384d;
+}
+body{
+    font-family: Roboto;
+    height: 100vh;
+    background-color: var(--bgcolor);
+    display: grid;
+    place-items: center;
+}
+.wrapper{
+    height: 350px;
+    width: 350px;
+    background-color: white;
+    border-radius: 15px;
+    padding: 30px;
+    scale: 0.8;
+}
+.wrapper h1{
+    font-size: 2.5rem;
+    margin: 10px 0px;
+}
+.wrapper p{
+    line-height: 1.5rem;
+}
+.wrapper button{
+    background-color: var(--bgcolor);
+    color: white;
+    font-weight: bolder;
+    border: none;
+    margin-top: 25px;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 1rem;
+    width: 100%;
+    &:hover{
+        cursor: pointer;
+        background: linear-gradient(45deg, #ff5371, #ff6645);
+}
+}
